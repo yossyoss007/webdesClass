@@ -1,15 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img_368404.png">
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/img_368404.png" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html" aria-label="go back to home page" class="site-logo">
+        <img src="images/TipToe Soles_Logo_colour.png" alt="tiptoe logo" />
+      </a>
+
+      <form method="get" action="#" class="search-form">
+        <input
+          type="search"
+          name="query"
+          id="search-input"
+          placeholder="search"
+          class="search-box"
+        />
+        <label for="search-input" class="sr-only">search</label>
+        <button type="submit" class="btn_header-search">search</button>
+      </form>
+
+      <nav class="user-nav">
+        <a href="#">wishlist</a>
+        <a href="#">login</a>
+        <a href="#">signup</a>
+        <a href="#">cart</a>
+      </nav>
+    </header>
+
+    <div
+      class="banner"
+      data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 1500, "wrapAround": true, "prevNextButtons": false, "pageDots": false, "pauseAutoPlayOnHover": false}'
+    >
+      <div class="slide"><h2>Latest Shoes</h2></div>
+
+      <div class="slide"><h2>Specials</h2></div>
+
+      <div class="slide"><h2>Clearance Sale</h2></div>
+    </div>
+
+    <main class="container">
+      <nav class="sidebar">
+        <a href="#">about us</a>
+        <a href="#">products</a>
+        <a href="#">services</a>
+        <a href="#">contact us</a>
+        <a href="#">leave feedback</a>
+      </nav>
+
+      <div class="main_body">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/Gary Tan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/Gary Tan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/Gary Tan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/Gary Tan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/Gary Tan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/Gary Tan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <nav class="policies">
+        <a href="#">delivery</a>
+        <a href="#">return</a>
+        <a href="#">exchange</a>
+      </nav>
+      <nav class="socials">
+        <a href="#"
+          ><img src="images/facebook.svg" alt="facebook logo" class="thumb"
+        /></a>
+        <a href="#"
+          ><img src="images/twitter.svg" alt="twitter logo" class="thumb"
+        /></a>
+        <a href="#"
+          ><img src="images/instagram.svg" alt="instagram logo" class="thumb"
+        /></a>
+      </nav>
+    </footer>
+  </body>
 </html>
