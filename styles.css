@@ -143,6 +143,9 @@ img {
   .container {
     grid-template-columns: 1fr;
   }
+  .sidebar a {
+    text-align: center;
+  }
 }
 
 /* side navbar */
