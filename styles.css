@@ -47,6 +47,7 @@ img {
 .main-header {
   grid-template-columns: auto 1fr auto;
   display: grid;
+  background: rgb(255, 166, 206);
 }
 
 .main-header a:hover {
@@ -65,6 +66,12 @@ img {
   width: 115px;
 }
 
+.site-logo:hover {
+  filter: invert(1);
+}
+
+/* search bar and button */
+
 .search-form {
   display: flex;
   justify-content: center;
@@ -73,6 +80,15 @@ img {
 
 .search-box {
   width: 40vw;
+  border-radius: 9px;
+  height: 37px;
+  padding: 10px;
+  border: solid rgb(255, 127, 127) 3px;
+  background: whitesmoke;
+}
+
+.search-box:focus {
+  outline: none;
 }
 
 @media screen and (max-width: 888px) {
@@ -80,6 +96,21 @@ img {
     width: 30vw;
   }
 }
+
+.btn_header-search {
+  border: solid rgb(255, 127, 127) 3px;
+  background: rgb(255, 127, 127);
+  color: beige;
+  border-radius: 9px;
+  padding: 8px;
+}
+
+.btn_header-search:hover {
+  border-color: greenyellow;
+  background: greenyellow;
+}
+
+/* user navs */
 
 .user-nav {
   display: flex;
@@ -192,7 +223,12 @@ img {
   color: dodgerblue;
 }
 
+/* cards */
+
 .card {
+}
+
+.card-img-top {
 }
 
 /* footer */
@@ -231,6 +267,10 @@ img {
 
 .socials a {
   margin-right: 2rem;
+}
+
+.socials a:hover {
+  filter: invert(1);
 }
 
 .thumb {
