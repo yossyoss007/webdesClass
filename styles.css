@@ -1,13 +1,13 @@
 :root {
-  --color-heading: rgb(1, 76, 0);
-  --color-body: rgb(80, 255, 78);
-  --color-background_main: rgb(94, 122, 94);
-  --color-background_secondary: rgb(118, 161, 118);
-  --color-background_third: rgb(90, 127, 89);
-  --color-background_fourth: rgb(129, 159, 127);
-  --color-link: rgb(41, 78, 41);
-  --color-link_hover: rgb(100, 172, 99);
-  --color-link_background: greenyellow;
+  --color-heading: rgb(237, 237, 237);
+  --color-body: rgb(227, 227, 227);
+  --color-background_main: rgb(10, 10, 10);
+  --color-background_secondary: rgb(19, 19, 19);
+  --color-background_third: rgb(30, 30, 30);
+  --color-background_fourth: rgb(35, 35, 35);
+  --color-link: rgb(132, 132, 132);
+  --color-link_hover: rgb(246, 246, 246);
+  --color-link_background: rgb(89, 89, 89);
 }
 
 *,
@@ -72,10 +72,11 @@ img {
 
 .site-logo {
   width: 115px;
+  filter: grayscale(1) contrast(200%);
 }
 
 .site-logo:hover {
-  filter: opacity(0.5);
+  filter: grayscale(1) contrast(80%);
 }
 
 /* search bar and button */
@@ -88,7 +89,7 @@ img {
 
 .search-box {
   width: 40vw;
-  border-radius: 9px;
+
   height: 37px;
   padding: 10px;
   border: solid var(--color-background_main) 3px;
@@ -106,10 +107,10 @@ img {
 }
 
 .btn_header-search {
-  border: solid var(--color-link_hover) 3px;
+  border: none;
   background: var(--color-link_hover);
-  color: beige;
-  border-radius: 9px;
+  color: var(--color-link);
+
   padding: 8px;
 }
 
@@ -194,7 +195,7 @@ img {
 /* side navbar */
 
 .sidebar {
-  background: var(--color-background_third);
+  background: var(--color-background_secondary);
 }
 
 .sidebar a {
@@ -242,6 +243,15 @@ img {
 }
 
 .card-img-top {
+  filter: grayscale(1) contrast(200%);
+}
+
+.card-img-top:hover {
+  filter: grayscale(1) contrast(800%);
+}
+
+.card-title {
+  background: var(--color-background_fourth);
 }
 
 /* footer */
@@ -249,8 +259,8 @@ img {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--color-background_fourth);
   height: 20rem;
+  background: var(--color-background_third);
 }
 
 @media screen and (max-width: 540px) {
@@ -280,10 +290,11 @@ img {
 
 .socials a {
   margin-right: 2rem;
+  filter: invert(1);
 }
 
 .socials a:hover {
-  filter: opacity(0.6);
+  filter: invert(0);
 }
 
 .thumb {
