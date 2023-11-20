@@ -219,7 +219,7 @@ img {
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 790px) {
   .main_body {
     display: flex;
     flex-direction: column;
@@ -240,6 +240,20 @@ img {
 /* cards */
 
 .card {
+  width: 20rem;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 790px) {
+  .card {
+    width: 70vw;
+    text-align: center;
+  }
+
+  .card-img-top {
+    display: flex;
+    right: 50%;
+  }
 }
 
 .card-img-top {
