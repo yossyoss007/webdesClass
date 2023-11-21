@@ -246,7 +246,17 @@ img {
 }
 
 .contact-us {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  letter-spacing: -2px;
   margin-left: 7rem;
+  margin-right: 1em;
+}
+
+.contact-us-info {
+  margin: 0;
 }
 
 @media screen and (max-width: 790px) {
